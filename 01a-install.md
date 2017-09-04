@@ -48,13 +48,22 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 3, because of pre-work compatibility in HackerRank, but also because that's what I've been working with ever since *Learn Python The Hard Way* switched from 2.7 to 3.6 in the latest edition. Seems we've reached the tipping point where 3.X is ubiquitous enough to learn it first/primarily.  
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Open a terminal window and enter:
+```console
+$ python -V
+```
+or, if that doesn't work:
+```console
+$ python --version
+```
+
+
 
  
 
