@@ -19,7 +19,21 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * cat – show file contents (catalog)
+> > * cp – copy file(s) from one directory to another
+> > * du – calculates size of current directory
+> > * ls – list directory contents
+> > * ls -a – list directory contents including hidden files
+> > * ls -l – list directory contents in long format
+> > * ls -t – list directory contents sorted by time last modified (recent first)  
+> > *All the previous options can be combined, e.g. 'ls -alt'*  
+> > * man – show manual entry on a command
+> > * mkdir – create directory
+> > * mv – move file (or rename)
+> > * pwd – print working directory
+> > * rm – permanently remove (delete) a file
+> > * rm -r – permanently remove (delete) a directory and all of its contents
+> > * touch – creates a file
 
 ---
 
@@ -34,7 +48,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * ls – lists contents of working directory
+> > * ls -a – lists contents including hidden files
+> > * ls -l – lists contents in long form
+> > * ls -lh – lists contents in long form with readable file size
+> > * ls -lah – lists contents in long form, including hidden files, with readable file size
+> > * ls -t – lists files sorted by time last modified (recent first)
+> > * ls -Glp – list files in long form (-l) with slashes added behind directory names (-p) and colorized output enabled (-G)
 
 ---
 
