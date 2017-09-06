@@ -79,6 +79,7 @@ What does `xargs` do? Give an example of how to use it.
 ```console
 $ xargs -n 1 find . -name
 "*.md" "*.txt" "*.py"
+^D
 ```
 
  
