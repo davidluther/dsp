@@ -60,7 +60,24 @@ peopleByAge = sorted(people, key=lambda p: p[1])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a shortcut to building a list when one could otherwise use a simple for-loop or nested for-loops. Examples with 'map' and 'filter' equivalents:
+```python
+fib = [1,1,2,3,5,8,13]
+# double the value of each number in a list
+fibX2LC = [x*2 for x in fib]
+fibX2Map = list(map(lambda x: x*2, fib))
+# retain only odd numbers
+fibOddLC = [x for x in fib if x%2 != 0]
+fibOddFilter = list(filter(lambda x: x%2 != 0, fib))
+```
+>> Set and dictionary comprehensions, respectively:
+```python
+# constructs a dictionary with words as keys and their lengths as values
+words = ['cheese', 'foot', 'brain', 'stew', 'pie', 'jackpot']
+wordLengths = {word: len(word) for word in words}
+# constructs a set of all the vowels that appear in a given word
+vowels = {v for v in 'kalamazoo' if v in 'aeiou'}
+```
 
 ---
 
