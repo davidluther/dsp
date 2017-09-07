@@ -44,7 +44,15 @@ for score in scoresAsc:
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The 'lambda' function creates a short, anonymous function that takes any number of arguments and then returns the value of a single expression. It can be used in any situation where a function is needed/expected, and the function is relatively short (single expression), contains no commands, and need not be repeated. Examples:  
+```python
+# transform list values
+fib = [1,1,2,3,5,8,13]
+fibMod = list(map(lambda x: (x*2)-5, foo))
+# sort list of people by their ages
+people = [('David', 37), ('Julia', 31), ('Freddie', 34), ('Bennett', 36)]
+peopleByAge = sorted(people, key=lambda p: p[1])
+```
 
 ---
 
