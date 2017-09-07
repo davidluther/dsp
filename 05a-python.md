@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both lists and tuples are ordered, iterable sequences of data, and these data may be a mixture of types (integers, floats, strings, variables, etc.). Both can be printed, sliced, concatenated, or multiplied, resulting in a new object of the respective data type. Tuples are immutable; only lists may be altered. As such, any methods such as .pop(), .insert(), .append(), or .sort() that alter the contents of a list cannot be used on a tuple. Only tuples can be used as dictionary keys.
 
 ---
 
@@ -20,7 +20,23 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both lists and sets are iterable sequences of data, and the data may be a mixture of types for each, as with tuples. Sets are unordered and thus do not support indexing, and also do not include duplicates, whereas both of these are supported with lists. To find the actual location of an element, one can only use a list, given the lack of indexing with a set. Though were one trying only to discern membership of an element in a list, it would probably be easier to use a set if the list were substantially large and included many duplicates, e.g.:  
+```python
+reallyBigListSet = set(reallyBigList)
+foo in reallyBigListSet
+```
+> > Examples of use:  
+```python
+# how many occurrences of each test score?
+scoreList = [70, 85, 80, 95, 85, 90, 80, 100, 95, 85, 75]
+scoreSet = set(scoreList)
+for score in scoreSet:
+    print(f"{score}:", scoreList.count(score))
+# or to make sure scores were presented in asecending order
+scoresAsc = sorted(scoreSet)
+for score in scoresAsc:
+    print(f"{score}:", scoreList.count(score))
+```
 
 ---
 
