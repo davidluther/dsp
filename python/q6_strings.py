@@ -44,12 +44,11 @@ def both_ends(s):
     'xyyz'
     """
     
-    def both_ends(s):
-        if len(s) < 2:
-            return ""
-        else:
-            out_str = s[:2] + s[-2:]
-            return out_str
+    if len(s) < 2:
+        return ""
+    else:
+        out_str = s[:2] + s[-2:]
+        return out_str
 
 def fix_start(s):
     """
@@ -67,7 +66,8 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    
+    return s[0] + s[1:].replace(s[0], '*')
 
 
 def mix_up(a, b):
