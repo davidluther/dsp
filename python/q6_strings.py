@@ -18,7 +18,13 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    
+    if 0 <= int(count) < 10:
+        return f"Number of donuts: {count}"
+    elif int(count) >= 10:
+        return "Number of donuts: many"
+    else:
+        pass
 
 
 def both_ends(s):
@@ -37,8 +43,13 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
-
+    
+    def both_ends(s):
+        if len(s) < 2:
+            return ""
+        else:
+            out_str = s[:2] + s[-2:]
+            return out_str
 
 def fix_start(s):
     """
