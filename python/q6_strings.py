@@ -130,6 +130,11 @@ def not_bad(s):
     "It's bad yet not"
     """
 
+    # This code satisfies the test case, but will be fooled if 'not'
+    # or 'bad' are components of other words, for example:
+    # "I'm drinking pinot noir with a badger" will evaluate as
+    # "I'm drinking pigoodger"
+    # Can fix if necessary
     if not ('not' in s and 'bad' in s):
         return s
     elif s.find('not') > s.find('bad'):
