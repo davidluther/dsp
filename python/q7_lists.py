@@ -12,7 +12,7 @@ def match_ends(words):
     3
     >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
     2
-        >>> match_ends(['aaa', 'be', 'abc', 'hello'])
+    >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
 
