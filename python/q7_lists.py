@@ -12,10 +12,15 @@ def match_ends(words):
     3
     >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
     2
-    >>> match_ends(['aaa', 'be', 'abc', 'hello'])
+        >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+
+    count = 0
+    for s in words:
+        if len(s) > 1 and s[0] == s[-1]:
+            count += 1
+    return count
 
 
 def front_x(words):
@@ -32,7 +37,13 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+
+    xwords = []
+    for s in words[:]:
+        if s[0] == 'x':
+            xwords.append(s)
+            words.remove(s)
+    return sorted(xwords) + sorted(words)
 
 
 def sort_last(tuples):
@@ -49,7 +60,8 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+
+    return sorted(tuples, key=lambda x: x[-1])
 
 
 def remove_adjacent(nums):
@@ -68,8 +80,16 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
-
+    
+    if len(nums) > 1:
+        newnums = [nums[0]]
+        for i in range(1,len(nums)):
+            if nums[i] != newnums[-1]:
+                newnums.append(nums[i])
+        return newnums
+    else:
+        return nums
+            
 
 def linear_merge(list1, list2):
     """
@@ -85,4 +105,20 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+
+    outlist = []
+
+    while len(list1) != 0 and len(list2) != 0:
+        if list1[0] < list2[0]:
+            outlist.append(list1.pop(0))
+        elif list1[0] > list2[0]:
+            outlist.append(list2.pop(0))
+        else:
+            outlist.append(list1.pop(0))
+
+    if len(list1) == 0:
+        outlist += list2
+    else:
+        outlist += list1
+
+    return outlist
