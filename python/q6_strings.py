@@ -20,7 +20,7 @@ def donuts(count):
     """
     
     if 0 <= int(count) < 10:
-        return f"Number of donuts: {count}"
+        return "Number of donuts: {}".format(count)
     elif int(count) >= 10:
         return "Number of donuts: many"
     else:
@@ -160,8 +160,17 @@ def front_back(a, b):
     'KitDontenut'
     """
 
-    af = a[0:round((len(a)+0.1)/2)]
-    bf = b[0:round((len(b)+0.1)/2)]
-    ab = a[-(len(a)//2):]
-    bb = b[-(len(b)//2):]
+    vara = round((len(a)+0.1)/2)
+    varb = round((len(b)+0.1)/2)
+    af = a[0:vara]
+    bf = b[0:varb]
+    if len(a) > 1:
+        ab = a[vara:]
+    else:
+        ab = ''
+    if len(b) > 1:
+        bb = b[varb:] 
+    else:
+        bb = ''
     return  af + bf + ab + bb
+
