@@ -86,7 +86,10 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Let p(T) indicate the probability of being a twin, p(I) the probability of being an identical twin, and p(¬I) the probabilty of being a fraternal twin. Since twins can only be identical or fraternal the probability of being a twin is given by the sum of the two probabilities: P(T) = p(I) + p(¬I)  
+>> Since we know p(I) = 1/300 (0.00333) and p(¬I) = 1/125 (0.008), p(T) = 0.0113.  
+>> To find out the probability that Elvis was an identical twin, we need to find p(I|T). Since p(I) = p(T)p(I|T), p(I|T) = p(I)/P(T). Plugging in the numbers, **p(I|T) = 0.295**.
+
 
 ---
 
@@ -100,6 +103,8 @@ How do frequentist and Bayesian statistics compare?
 ## <a name="section-e"></a>5.  Optional Exercises
 
 The following exercises are optional, but we highly encourage you to complete them if you have the time.
+
+>> I will circle back to finish these if I have time after finishing everything else!
 
 ### Q7. [Think Stats Chapter 7 Exercise 1](statistics/7-1-weight_vs_age.md) (correlation of weight vs. age)
 In this exercise, you will compute the effect size of correlation.  Correlation measures the relationship of two variables, and data science is about exploring relationships in data.    
