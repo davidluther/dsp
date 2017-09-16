@@ -6,7 +6,7 @@
 
 For the actual distribution, the mean number of children in each household is 1.02. Were children to be asked how many lived in each household, including themselves, the mean would be 2.40. A plot of each probability mass function:
 
-![Children in each household: actual v. biased](http://unclehomepage.com/pixels/numkdhh.png)
+![Children per household (actual v. biased)](../img/numkdhh.png)
 
 Not surprisingly, the probability of receiving an answer of 0 in the biased distribution is 0, considering the children would be surveyed. Despite there being slightly more households a with one child than those with two, the biased distribution shows the probability of an answer of two as double that of an answer of one, given that there are nearly twice as many children living in two-child households. From there, probabilities decrease, since the total numbers of children in three-, four-, and five-child households decrease as well.
 
