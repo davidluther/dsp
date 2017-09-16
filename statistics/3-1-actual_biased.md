@@ -17,7 +17,6 @@ Not surprisingly, the probability of receiving an answer of 0 in the biased dist
 # make probability mass funciton from numkdhh data
 kdhh_pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh_raw')
 
-
 # make pmf for biased data
 kdhh_pmf_biased = kdhh_pmf.Copy(label='numkdhh_bias')
 for x, p in kdhh_pmf.Items():
