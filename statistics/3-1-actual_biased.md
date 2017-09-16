@@ -1,5 +1,7 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
+---
+
 **Exercise summary:** Use NSFG respondent variable 'numkdhh' to show acutal probability distribution for the number of children under 18 in each household, then compute a biased distribution as if the children were surveyed and aske how many total children lived in their household. Plot each distribution and compute their means.
 
 ---
