@@ -12,7 +12,7 @@ For the actual distribution, the mean number of children in each household is 1.
 
 Not surprisingly, the probability of receiving an answer of 0 in the biased distribution is 0, considering the children would be surveyed. Despite there being slightly more households a with one child than those with two, the biased distribution shows the probability of an answer of two as double that of an answer of one, given that there are nearly twice as many children living in two-child households. From there, probabilities decrease, since the total numbers of children in three-, four-, and five-child households decrease as well.
 
-#### Code used to answer the exercise:
+#### Code used to solve exercise:
 ```python
 # make probability mass funciton from numkdhh data
 kdhh_pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh_raw')
