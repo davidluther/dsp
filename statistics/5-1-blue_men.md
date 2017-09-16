@@ -2,7 +2,7 @@
 
 ---
 
-**Exercise summary:** Height distribution for adults is relatively normal, with µ = 178 cm / σ = 7.7 cm for men and µ = 163 cm / σ = 7.3 cm for women. To join the Blue Man group, one must be a male beween 5'10" and 6'1". What percentage of the US male population satisfies this condition?
+**Exercise summary:** Height distribution for adults is relatively normal, with µ = 178 cm / σ = 7.7 cm for men and µ = 163 cm / σ = 7.3 cm for women. To join the Blue Man group, one must be a male beween 5'10" and 6'1". What percentage of the US male population qualifies?
 
 ---
 
